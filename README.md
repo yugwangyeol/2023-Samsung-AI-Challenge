@@ -84,6 +84,6 @@
 
 <br/>
 
-## 6. 발표 자료&참고 자료
+## 7. 발표 자료&참고 자료
 
 [2023-Samsung-Ai-Challenge DACON](https://dacon.io/competitions/official/236134/overview/description)  
