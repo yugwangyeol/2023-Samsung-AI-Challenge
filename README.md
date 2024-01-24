@@ -36,11 +36,15 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp; 2023년 Samsung AI Challenge : Image captiong 대회에서는 메라로 촬영된 영상의 화질에 대한 정량 평가 점수를 예측하고 그 평가 결과를 자연어로 상세하게 표현하는 알고리즘을 개발을 주제로 대회를 진행하였다. 
 
+<br/>
+
 ![스크린샷 2024-01-24 151115](https://github.com/yugwangyeol/2023-Samsung-AI-Challenge/assets/72298825/85111fea-4bbc-4334-b673-c1f0bd7bb89f)
 
-&nbsp;&nbsp;&nbsp;&nbsp; Baseline으로 주어진 code에서는 해당 Task를 한번에 처리하였으나, 우리 팀은 2개의 Task로 나누어 진행하였다. IQA Task는 PLCC와 SRCC를 사용하여 평가하였고, Captioning 같은 경우에는 총 4개의 평가 지표를 조합하여 평가하였다. 특히 대회 특성상 2개의 Task를 동시에 평가하므로 리더보드에서는 2개의 점수를 합하여 평가를 진행하였다. 추가적으로 동점일 경우 captioning 점수가 높은 팀이 상위로 인정되었다.
+<br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp; 주어진 데이터는 AVA-caption 데이터와 KoniQ++ 데이터가 합쳐진 데이터로 관련된 연구를 많이 조사하였다. IQA Task의 경우 MetaIQA, MANIQA와 같은 IQA 특화 모델을 사용하였으나, 성능이 좋지 않아 Timm에 있는 최신 모델을 사용하여 학습시켜 IQA score를 도출하였다. Captioning Task 경우 BLIP, OFA와 같은 대형 모델을 사용하였으나, 자원의 제한으로 small 모델들만 사용하여 진행하였다. 이를 통해 10등으로 본선에 진출하였다.
+&nbsp;&nbsp;&nbsp;&nbsp; Baseline으로 주어진 code에서는 해당 Task를 한번에 처리하였으나, 우리 팀은 **2개의 Task로 나누어 진행**하였다. IQA Task는 PLCC와 SRCC를 사용하여 평가하였고, Captioning 같은 경우에는 총 4개의 평가 지표를 조합하여 평가하였다. 특히 대회 특성상 2개의 Task를 동시에 평가하므로 리더보드에서는 **2개의 점수를 합하여 평가를 진행((하였다. 추가적으로 동점일 경우 captioning 점수가 높은 팀이 상위로 인정되었다.
+
+&nbsp;&nbsp;&nbsp;&nbsp; 주어진 데이터는 AVA-caption 데이터와 KoniQ++ 데이터가 합쳐진 데이터로 관련된 연구를 많이 조사하였다. IQA Task의 경우 MetaIQA, MANIQA와 같은 IQA 특화 모델을 사용하였으나, 성능이 좋지 않아 **Timm에 있는 최신 모델을 사용**하여 학습시켜 IQA score를 도출하였다. Captioning Task 경우 **BLIP, OFA와 같은 대형 모델**을 사용하였으나, 자원의 제한으로 small 모델들만 사용하여 진행하였다. 이를 통해 **10등으로 본선에 진출**하였다.
 
 
 <br/>
@@ -60,6 +64,9 @@
   - MetaIQA
   - MENIQA
   - Timm (VIT, SWIN-T)
+- Captioning model
+  - BLIP
+  - OFA
 
 <br/>
 
